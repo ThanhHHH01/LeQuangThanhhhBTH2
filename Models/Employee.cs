@@ -1,9 +1,12 @@
-using System.Data;
-namespace LeQuangThanhBTH2.Models{
+using System.ComponentModel.DataAnnotations;
+
+namespace LeQuangThanhBTH2.Models
+{
     public class Employee
     {
-        public int ID {get; set;}
-        public string? Name {get; set;}
-        public int Age {get; set;}
+        [Key]
+        public string EmpID {get; set;}
+        public string EmpName {get; set;}
+        public string Address {get; set;}
     }
 }
